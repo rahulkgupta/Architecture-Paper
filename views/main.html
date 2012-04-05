@@ -1,0 +1,177 @@
+<head>
+	<script src="jquery-1.7.2.min.js"></script>
+	<script src="jcanvas.min.js"></script>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+<!-- <img src="http://naomiclare.files.wordpress.com/2008/02/6-interior-cast-light-view.jpg" height="50%"/>
+ --><!-- <canvas id="ando-square" width="200" height="200"></canvas>
+ <canvas id="ando-big-arc" width="100" height="240"> </canvas>
+ <canvas id="ando-mid-sec" width="70" height="160"></canvas>
+<canvas id="ando-long-sec" width='50' height='300'></canvas> -->
+<div id="sq1-container">
+	<canvas id="sq1" width="200" height="200"></canvas>
+	<div id="sq1-text">
+		<h1> Intererior </h1>
+	</div>
+</div>
+<div id="sq2-container">
+	<canvas id="sq2" width="140" height="105"></canvas>
+	<div id="sq2-text">
+		<h1> Intererior </h1>
+	</div>
+</div>
+<canvas id="sq3" width="76" height="107"></canvas>
+<canvas id="sq4" width="76" height="107"></canvas>
+<div id="c1-text">Tadao Ando</div>
+<script type="text/javascript">
+
+$("#sq1").addLayer({
+	method: "drawRect",
+	strokeStyle: 'black',
+	strokeWidth: 10,
+	fillStyle: "#ff2100",
+	x: 6, y: 6,
+	width: 188,
+	height: 188,
+	fromCenter: false
+})
+
+$("#sq2").addLayer({
+	method: "drawRect",
+	strokeStyle: 'black',
+	strokeWidth: 10,
+	fillStyle: "#ff8900",
+	x: 6, y: 6,
+	width: 128,
+	height: 93,
+	fromCenter: false
+})
+
+$("#sq3").addLayer({
+	method: "drawRect",
+	strokeStyle: 'black',
+	strokeWidth: 10,
+	fillStyle: "#ffffff",
+	x: 6, y: 6,
+	width: 64,
+	height: 95,
+	fromCenter: false
+})
+
+
+$("#sq4").addLayer({
+	method: "drawRect",
+	strokeStyle: 'black',
+	strokeWidth: 10,
+	fillStyle: "#ffffff",
+	x: 6, y: 6,
+	width: 64,
+	height: 95,
+	fromCenter: false
+})
+
+$('#sq1').drawLayers();
+$('#sq2').drawLayers();
+$('#sq3').drawLayers();
+$('#sq4').drawLayers();
+
+
+// function draw() {
+// 	var basex = 100
+// 	var basey = 100
+// 	var c=document.getElementById("myCanvas");
+// 	var ctx=c.getContext("2d");
+// 	ctx.fillStyle="#000000";
+// 	ctx.lineWidth = 10
+// 	ctx.beginPath();
+// 	ctx.moveTo(basex,basey)
+// 	// ctx.lineTo(basex,basey+200);
+// 	// ctx.lineTo(basex+5,basey+200)
+// 	// ctx.lineTo(basex+5,basey-5)
+// 	// ctx.lineTo(basex-200,basey-5)
+// 	// ctx.lineTo(basex-200, basey)
+// 	// ctx.lineTo(basex, basey)
+// 	ctx.strokeRect(0,0,200,200)
+// 	ctx.stroke();
+// }
+
+// $('#ando-big-arc').drawQuad({
+//   strokeStyle: "#000",
+//   strokeWidth: 5,
+//   x1: 70, y1: 30,
+//   cx1: -50, cy1: 135,
+//   x2: 70, y2: 240
+// }).drawQuad({
+//   strokeStyle: "#000",
+//   strokeWidth: 5,
+//   x1: 67, y1: 0,
+//   cx1: 65, cy1: 55,
+//   x2: 90, y2: 75
+// }).drawLine({
+// 	strokeStyle: "#000",
+//   strokeWidth: 5,
+//   strokeJoin: "miter",
+//   x1: 67, y1: 0,
+//   x2: 100, y2: 0,
+//   x3: 100, y3: 160,
+// });
+// $("#ando-long-sec").addLayer({
+// 	method: "drawRect",
+// 	strokeStyle: 'black',
+// 	strokeWidth: 5,
+// 	fillStyle: "white",
+// 	x: 0, y: 0,
+// 	width: 50,
+// 	height: 300,
+// 	fromCenter: false
+// })
+
+// $('#ando-mid-sec').addLayer({
+// 	method: "drawRect",
+// 	strokeStyle: 'black',
+// 	strokeWidth: 5,
+// 	fillStyle: "white",
+// 	x: 0, y: 0,
+// 	width: 70,
+// 	height: 160,
+// 	fromCenter: false
+// })
+
+// $("#ando-long-sec").drawLayers()
+// $("#ando-mid-sec").drawLayers()
+// $("#ando-square").addLayer({
+// 	method: "drawRect",
+// 	strokeStyle: 'white',
+// 	strokeWidth: 5,
+// 	fillStyle: "black",
+// 	x: 0, y: 0,
+// 	width: 200,
+// 	height: 200,
+// 	fromCenter: false
+// })
+
+
+
+
+// //$("#ando-square").drawLayers()
+
+
+$(function() {
+	var canvas = $('#ando-square')[0]
+	$('#sq1').hover(function (event) {
+		
+	}, function (event) {
+	
+	})
+
+	$('#ando-square').click(function (event) {
+
+		$("#ando-long-sec")
+				.drawLayers()
+				.animate({"left": "-=30px", "top": "+=100px"}, "slow");
+
+	})
+
+})
+</script>
