@@ -1,20 +1,32 @@
-canvas(id="rietveld-sq", width="200", height="200")
-canvas(id="ando-sq", width="200", height="200")
+canvas(id="rietveld-sq", width="200", height="200", data-init='true')
+canvas(id="ando-sq", width="200", height="200", data-init='true')
 canvas(id="sim-sq", width="100", height="100")
-div(id="sq1-container")
-	canvas(id="sq1", width="200", height="200")
-	div(id="sq1-text")
-		h1 Materials
-div(id="sq2-container")
-	canvas(id="sq2", width="140", height="105")
-	div(id="sq2-text")
-		h1 Interior
-div(id="sq3-container")
-	canvas(id="sq3", width="76", height="105")
-	div(id="sq3-text")
-		h1 Form
-div(id="sq4-container")
-	canvas(id="sq4", width="76", height="105")
-	div(id="sq4-text")
-		h1 Size
+#rietveld
+	div(id="sq1-container")
+		canvas(id="sq1", width="200", height="200")
+		div(id="sq1-text")
+			h1 Materials
+	div(id="sq2-container")
+		canvas(id="sq2", width="140", height="105")
+		div(id="sq2-text")
+			h1 Interior
+	div(id="sq3-container")
+		canvas(id="sq3", width="76", height="105")
+		div(id="sq3-text")
+			h1 Form
+	div(id="sq4-container")
+		canvas(id="sq4", width="76", height="105")
+		div(id="sq4-text")
+			h1 Size
+#ando
+	div(class="light", id="ando-1")
+		h2(class="light-text", id="ando-1-text")
+	div(class="light", id="ando-2")
+		h2(class="light-text", id="ando-2-text")
+	div(class="light", id="ando-3")
+		h2(class="light-text", id="ando-3-text")
+	div(class="light", id="ando-4")
+		h2(class="light-text", id="ando-4-text")
+
+
 script(src='/javascripts/drawings.js')
