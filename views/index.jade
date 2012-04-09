@@ -1,34 +1,51 @@
-canvas(id="rietveld-sq", width="200", height="200", data-init='true')
-canvas(id="ando-sq", width="200", height="200", data-init='true')
-#rietveld
-	div(id="sq1-container")
-		canvas(id="sq1", width="200", height="200")
-		div(id="sq1-text")
-			h1 Materials
-	div(id="sq2-container")
-		canvas(id="sq2", width="140", height="105")
-		div(id="sq2-text")
-			h1 Interior
-	div(id="sq3-container")
-		canvas(id="sq3", width="76", height="105")
-		div(id="sq3-text")
-			h1 Form
-	div(id="sq4-container")
-		canvas(id="sq4", width="76", height="105")
-		div(id="sq4-text")
-			h1 Size
-div(id="ando-info")
-	div(id="ando-pic")
-	div(id="ando-text")
-#ando
-	div(class="light", id="ando-1")
-		h2(class="light-text", id="ando-1-text")
-	div(class="light", id="ando-2")
-		h2(class="light-text", id="ando-2-text")
-	div(class="light", id="ando-3")
-		h2(class="light-text", id="ando-3-text")
-	div(class="light", id="ando-4")
-		h2(class="light-text", id="ando-4-text")
+
+.container
+	canvas(id="rietveld-sq", width="200", height="200", data-init='true')
+	canvas(id="ando-sq", width="200", height="200", data-init='true')
+	#rietveld
+		div(id="sq1-container")
+			canvas(id="sq1", width="200", height="200")
+			div(id="sq-text-container")
+				div(id="sq1-text")
+					h1 Materials
+		div(id="sq2-container")
+			canvas(id="sq2", width="140", height="105")
+			div(id="sq2-text")
+				h1 Interior
+		div(id="sq3-container")
+			canvas(id="sq3", width="76", height="105")
+			div(id="sq3-text")
+				h1 Form
+		div(id="sq4-container")
+			canvas(id="sq4", width="76", height="105")
+			div(id="sq4-text")
+				h1 Main
+	div(id="rietveld-info")
+		div(id="rietveld-pic")
+			a(href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG/300px-Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG", rel="prettyPhoto[pp_gal]", title="You can add caption to pictures.")
+				img(src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG/300px-Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG", width="60", height="60", alt="Red round shape")
+			a(href="http://ad009cdnb.archdaily.net/wp-content/uploads/2010/12/1293607917-schroder30.jpg", rel="prettyPhoto[pp_gal]", title="You can add caption to pictures.")
+				img(src="http://ad009cdnb.archdaily.net/wp-content/uploads/2010/12/1293607917-schroder30.jpg", width="60", height="60", alt="Red round shape")
+			a(href="http://maddme.files.wordpress.com/2010/02/mulder-rietveld-schroder-house-living-room.jpg", rel="prettyPhoto[pp_gal]", title="You can add caption to pictures.")
+				img(src="http://maddme.files.wordpress.com/2010/02/mulder-rietveld-schroder-house-living-room.jpg", width="60", height="60", alt="Red round shape")
+			a(href="http://metropolism.com/reviews/ruth-buchnan-rietveld-sidesteppe/resources/the-view-from-below.jpg?version=0537fb40a68c18da59a35c2bfe1ca554", rel="prettyPhoto[pp_gal]", title="You can add caption to pictures.")
+				img(src="http://metropolism.com/reviews/ruth-buchnan-rietveld-sidesteppe/resources/the-view-from-below.jpg?version=0537fb40a68c18da59a35c2bfe1ca554", width="60", height="60", alt="Red round shape")
+			a(href="http://i.telegraph.co.uk/multimedia/archive/01562/p_schroder-red-blu_1562838c.jpg", rel="prettyPhoto[pp_gal]", title="You can add caption to pictures.")
+				img(src="http://i.telegraph.co.uk/multimedia/archive/01562/p_schroder-red-blu_1562838c.jpg", width="60", height="60", alt="Red round shape")
+		h1(id="rietveld-header")
+		div(id="rietveld-text")
+	div(id="ando-info")
+		div(id="ando-pic")
+		div(id="ando-text")
+	#ando
+		div(class="light", id="ando-1")
+			h2(class="light-text", id="ando-1-text")
+		div(class="light", id="ando-2")
+			h2(class="light-text", id="ando-2-text")
+		div(class="light", id="ando-3")
+			h2(class="light-text", id="ando-3-text")
+		div(class="light", id="ando-4")
+			h2(class="light-text", id="ando-4-text")
 
 
 script(src='/javascripts/drawings.js')
