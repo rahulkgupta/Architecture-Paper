@@ -269,6 +269,12 @@ margin-top:105px;
 	width:50px;
 }
 
+#ando-pic
+{
+	margin-bottom: 20px;
+	left: 70px;
+	position: relative;
+}
 #ando-text
 {
 	color: #ffffbb;
@@ -313,4 +319,42 @@ margin-top:105px;
 #rietveld-text
 {
 	font-family: 'Gentium Book Basic', serif;
+}
+
+#thesis
+{
+	position: relative;
+	width: 500px;
+	top:-20px;
+	font-family: 'Abril Fatface', cursive;
+	font-size:16px;
+	line-height:30px;
+	text-indent:40px
+}
+
+#title
+{
+	position: relative;
+	left: 440px;
+	width: 501px;
+	text-align: right;
+	top: -150px;
+	font-family: 'Lato', serif;
+
+}
+
+.rpic
+{
+	margin-right:10px;
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+}
+
+.apic
+{
+	margin-right:10px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#ffff99;
 }
