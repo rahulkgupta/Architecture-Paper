@@ -41,8 +41,8 @@ $("#ando-sq").addLayer({
 })
 
 $('#ando-sq').addLayer({
-	strokeStyle:'white',
-	fillStyle:'white',
+	strokeStyle:'#ffffbb',
+	fillStyle:'#ffffbb',
 	method:'drawText',
   strokeWidth: 1,
   x: 100, y: 130,
@@ -201,10 +201,10 @@ $('#ando-sq').click(function(event) {
 		// 	top: "+=200px"}
 		// 	,1000,function() {
 		$('#ando-text').text('The Koshino House was designed by Tadao Ando, commissioned by the designer Koshin, and built in the early 1980s in Ashiya, Japan. Ando, a modernist, believed in individualism, an ideal opposite to the philosophies surround De Stijl. His individualism is seen in his work ethic, as assumes responsibility for his actions and goes through every detail of his firm’s designs personally. As seen by the design of the Koshino House, he is a modernist, during a time when everyone else has been swept by the Post Modern movement, showing Ando’s testament to individualism and aversion to conformity. A celebrated architect from Osaka, Ando is a, “Master of geometry and proportions that sustains a superb sense of proportion.” (Matsuba 9)')
+		$('#ando-title').text("Main")
 		$('#ando-1').attr('data-clicked', 'true')
 		$('#ando-1').css('background','#ffff99')
-		$('#ando-1-text').text('Main')
-			  
+			 
 			 
 			// });
 	} else {
@@ -226,7 +226,8 @@ $('#ando-sq').click(function(event) {
 		$('#ando-1').css('background','#080808')
 		$('#ando-3').css('background','#080808')
 		$('#ando-2').css('background','#080808')
-		$('#ando-4').css('background','#080808')		
+		$('#ando-4').css('background','#080808')
+		$('#ando-title').text("")	
 		$('#ando-2-text').text('')
 		$('#ando-3-text').text('')
 		$('#ando-4-text').text('')
@@ -242,30 +243,28 @@ $('#ando-1').hover(function(event) {
 	$('#ando-1').css('background','#ffff99')
 	$('#ando-1-text').text('Main')
 }, function(event) {
-	if ($('#ando-1').attr('data-clicked') != 'true') {
 		$('#ando-1-text').text('')
-		$('#ando-1').css('background','#080808')
-	}
+		if ($('#ando-1').attr('data-clicked') != 'true')
+			$('#ando-1').css('background','#080808')
 })
 
 $('#ando-2').hover(function(event) {
 	$('#ando-2').css('background','#ffff99')
 	$('#ando-2-text').text('Materials')
 }, function(event) {
-	if ($('#ando-2').attr('data-clicked') != 'true') {
 		$('#ando-2-text').text('')
-		$('#ando-2').css('background','#080808')
-	}
+		if ($('#ando-2').attr('data-clicked') != 'true')
+			$('#ando-2').css('background','#080808')
+
 })
 
 $('#ando-3').hover(function(event) {
 	$('#ando-3').css('background','#ffff99')
 	$('#ando-3-text').text('Interior')
 }, function(event) {
-	if ($('#ando-3').attr('data-clicked') != 'true') {
 		$('#ando-3-text').text('')
-		$('#ando-3').css('background','#080808')
-	}
+		if ($('#ando-3').attr('data-clicked') != 'true')
+			$('#ando-3').css('background','#080808')
 	
 })
 
@@ -273,10 +272,9 @@ $('#ando-4').hover(function(event) {
 	$('#ando-4').css('background','#ffff99')
 	$('#ando-4-text').text('Structure & Form')
 }, function(event) {
-	if ($('#ando-4').attr('data-clicked') != 'true') {
 		$('#ando-4-text').text('')
-		$('#ando-4').css('background','#080808')
-	}
+		if ($('#ando-4').attr('data-clicked') != 'true')
+			$('#ando-4').css('background','#080808')
 })
 
 $('#ando-1').click(function(event) {
@@ -287,6 +285,7 @@ $('#ando-1').click(function(event) {
 	$('#ando-2-text').text('')
 	$('#ando-3-text').text('')
 	$('#ando-4-text').text('')
+	$('#ando-title').text('Main')
 	$('#ando-1').css('background','#ffff99')
 	$('#ando-3').css('background','#080808')
 	$('#ando-2').css('background','#080808')
@@ -304,6 +303,7 @@ $('#ando-2').click(function(event) {
 	$('#ando-1-text').text('')
 	$('#ando-3-text').text('')
 	$('#ando-4-text').text('')
+	$('#ando-title').text('Materials')
 	$('#ando-1').css('background','#080808')
 	$('#ando-3').css('background','#080808')
 	$('#ando-4').css('background','#080808')
@@ -323,7 +323,7 @@ $('#ando-3').click(function(event) {
 	$('#ando-1').css('background','#080808')
 	$('#ando-2').css('background','#080808')
 	$('#ando-4').css('background','#080808')
-	$('#ando-3-text').text('Interior')
+	$('#ando-title').text('Interior')
 	$("#ando-text").text('Each structure contains certain components of the house. The two story column contains the living room, dining room, and the kitchen on the first floor and the master bedroom on the second floor. The other column contains 6 children’s rooms and a tatami room, an homage to traditional Japanese style. The curved building contains the study and seems to provide closure to the house as a whole. Each structure contains openings and windows that allow for the play between light and shadow, for, “Natural light, ingeniously let in through adroitly situated slits in ceiling and walls, disperses the darkness and creates a pleasantly habitable space.” (Matusba 150) For example, the opening on the top of the extension structure  along the curved wall allows incoming light to create patterns of shadows. Similarly, one can experience such a phenomenon in the large two story living room in the center structure which allows for the light to create large shadows on the wall. Furthermore, the number of light fixtures is limited throughout the house, as Ando promotes natural light and the abstract geometry of the home. Hence, unlike the Rietveld-Schroder House, the Koshino House lacks thought out furnishing, as Ando stays true to only providing the client with a space to live in and nothing else.')
 	$('#ando-text').show();
 })
@@ -336,6 +336,7 @@ $('#ando-4').click(function(event) {
 	$('#ando-2-text').text('')
 	$('#ando-3-text').text('')
 	$('#ando-1-text').text('')
+	$('#ando-title').text('Structure')
 	$('#ando-4').css('background','#ffff99')
 	$('#ando-1').css('background','#080808')
 	$('#ando-2').css('background','#080808')

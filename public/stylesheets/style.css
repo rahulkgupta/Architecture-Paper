@@ -275,6 +275,14 @@ margin-top:105px;
 	left: 70px;
 	position: relative;
 }
+
+#ando-title
+{
+	color: #ffffbb;
+	position:relative;
+	float:left;
+	font-family: 'Open Sans', sans-serif;
+}
 #ando-text
 {
 	color: #ffffbb;
@@ -389,4 +397,25 @@ margin-top:105px;
 .link a:hover {
   color: #005580;
   text-decoration: underline;
+}
+
+#wktitle
+{
+	font-family: 'Lato', serif;
+
+}
+
+.wk
+{
+	font-family: 'Gentium Book Basic', serif;
+	font-size:16px;
+	padding-bottom:15px;
+
+}
+
+#home-link
+{
+	font-family: 'Gentium Book Basic', serif;
+	font-size:16px;
+	text-align:center;
 }
