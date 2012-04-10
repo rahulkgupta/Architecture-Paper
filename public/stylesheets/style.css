@@ -288,8 +288,9 @@ margin-top:105px;
 	color: #ffffbb;
 	position:relative;
 	float:left;
-	font-family: 'Old Standard TT', sans-serif;
+	font-family: 'Gentium Book Basic', serif;
 	font-size: 16px;
+	line-height:25px;
 }
 #ando-info
 {
@@ -327,6 +328,7 @@ margin-top:105px;
 #rietveld-text
 {
 	font-family: 'Gentium Book Basic', serif;
+	line-height:25px;
 }
 
 #thesis
@@ -334,7 +336,7 @@ margin-top:105px;
 	position: relative;
 	width: 500px;
 	top:-40px;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Gentium Book Basic', serif;
 	font-size:16px;
 	line-height:30px;
 	text-indent:40px
